@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<meta charset="UTF-8">
+	<title>Not available</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/reg3.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<img id="logo" src="{% static 'img/logo.png' %}">
+	<section class="Section1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="reg_block d-flex">
+						<div class="reg_content">
+							<h1 class="reg_title">
+								All in good time
+							</h1>
+							<p class="reg_par">
+								Now test is not available. <br>
+								Please come back in time slot metioned before
+							</p>
+							 
+						<div class="lines reg5">
+								<a href="{% url 'reg2' user  %}" class="prev">
+									<img src="{% static 'img/prev.png' %}" alt="">
+									Back
+								</a>
+						</div>
+					</div>
+						<div class="reg_picture">
+							<img src="{% static 'img/01.svg' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

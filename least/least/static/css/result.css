@@ -1,0 +1,76 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+/* --------- Section1 -----------*/
+#logo{
+ width: 6%;
+ height: 6%;
+ margin: 15px 0 0 15px;
+}
+.reg_block {
+	background-color: white;
+	height: 500px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 0px #ecebeb;
+}
+
+.reg_content {
+	width: 65%;
+	height: 100%;
+	padding-left: 50px;
+	padding-top: 85px;
+}
+
+.reg_picture {
+	width: 35%;
+	height: 100%;
+	background-color: #500099;
+}
+
+.reg_title {
+	font-size: 26px;
+	font-weight: bold;
+	color: #4505b3;
+}
+
+.test_par {
+	color: #4a4a4a;
+	font-size: 16px;
+	width: 90%;
+	padding-top: 50px;
+}
+
+.sections {
+	color: #4a4a4a;
+	font-size: 16px;
+	width: 90%;
+	margin-top: -12px;
+}
+
+.result_numb {
+	font-size: 36px;
+	color: #4505b3;
+	font-weight: bold;
+}
+
+

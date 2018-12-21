@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load staticfiles %}
+
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/reg3.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<img id="logo" src="{% static 'img/logo.png' %}">
+	{% csrf_token %}
+	<section class="Section1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="reg_block d-flex">
+						<div class="reg_content">
+							<h1 class="reg_title">
+								{% if root == "1" %}
+								Test duration
+								{% endif %}
+								{% if root == "2" %}
+								Время теста
+								{% endif %}	
+							</h1>
+							<div class="test_info">
+								<p class="test_par">
+									{% if root == "1" %}
+								During next 120 minutes you should answer 50 questions divided into 5 sections
+								{% endif %}
+								{% if root == "2" %}
+								В течение следующих 100 минут вам нужно будет ответить на 120 вопросов из 5-ти секций:
+								{% endif %}	
+									
+								</p>
+								
+								<p class="test_par">
+								{% if root == "1" %}
+								During the test you are prohibited to use internet or help of other people. Results cannot be changed.<br>
+								Good luck!
+								{% endif %}
+								{% if root == "2" %}
+								Во время теста строго запрещено пользоваться интернетом и помощью посторонних людей. Результаты теста изменить будет нельзя.<br>
+								Желаем вам удачи! 
+								{% endif %}	
+									
+								</p>
+							</div>
+							<div class="lines">
+								<a href="{% url 'reg4' user %}" class="prev">
+									<img src="{% static img/prev.png' $}" alt="">
+									{% if root == "1" %}
+									Back
+									{% endif %}
+									{% if root == "2" %}
+									Назад 
+									{% endif %}
+								</a>
+								<a href="{% url 'test' user root %}" class="next">
+									{% if root == "1" %}
+									Start test
+									{% endif %}
+									{% if root == "2" %}
+									Начать тест
+									{% endif %}
+									<img src="{% static 'img/3-Layers.png' %}" alt="">
+								</a>								
+							</div>
+						</div>
+						<div class="reg_picture">
+							<img src="{% static 'img/03.svg' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

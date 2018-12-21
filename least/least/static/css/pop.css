@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+#myBtn {
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #4505b3;
+    background-color: #4505b3;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: -3px;
+}
+#btnEnd {
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #4505b3;
+    background-color: #4505b3;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 14px; 
+}
+#myBtnCancer {
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #9a9a9a;
+    background-color: #9a9a9a;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+ 
+}
+#endbtn {
+    display: none;
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #4505b3;
+    background-color: #4505b3;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: -3px;
+}
+#EndofEverything{
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #4505b3;
+    background-color: #4505b3;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 14px;
+}
+#BtnCancer {
+    width: 90%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #9a9a9a;
+    background-color: #9a9a9a;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+

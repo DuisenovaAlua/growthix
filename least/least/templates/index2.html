@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/reg1.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<img id="logo" src="{% static 'img/logo.png' %}">
+	<section class="Section1">
+		<div class="container">
+				{% csrf_token %}
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="reg_block d-flex">
+						<div class="reg_content">
+							<h1 class="reg_title">
+								Dear Be-A-Star Participant!
+							</h1>
+							<p class="reg_par">
+								We hope you worked hard and ready to go through our Be-A-Star test!
+								You have only ONE chance to go through the test!<br>
+								Please fill in the form if you want to start Be-A-Star online test NOW! If you want just check whether you are registered within our database then make sure NOW is NOT the time of the test.
+								Make sure you enter your Personal details and email as you have entered them in the registration form!<br>
+								If you have difficulties with registration, please write us an email @ be-a-star@aifc.edu.kz
+								Test dates and time (Astana time):<br>
+								22 December 10:00-12:00<br>
+								26 December 19:00-21:00<br>
+								29 December 13:00-15:00<br>
+							</p>
+							<a class="next" href="{% url 'reg1' %}">Next
+										<img src="{% static 'img/3-Layers.png' %}" alt="">	
+									</a>	
+						</div>
+						<div class="reg_picture">
+							<img src="{% static 'img/01.svg' %}" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
